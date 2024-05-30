@@ -6,8 +6,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^.github/workflows/build.yml$"],
-      "matchStrings": ["MAUTRIX_SIGNAL_VERSION: (?<currentValue>.*?)\\n"],
+      "fileMatch": ["^.github/workflows/build.yml$", "^Dockerfile$"],
+      "matchStrings": ["MAUTRIX_SIGNAL_VERSION: (?<currentValue>.*?)\\n", "ARG MAUTRIX_SIGNAL_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "mautrix/signal",
       "datasourceTemplate": "github-releases",
     }
