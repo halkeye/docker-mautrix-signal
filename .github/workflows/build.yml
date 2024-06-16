@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  MAUTRIX_SIGNAL_VERSION: 0.6.1
+  MAUTRIX_SIGNAL_VERSION: 0.6.2
 
 jobs:
   docker:
